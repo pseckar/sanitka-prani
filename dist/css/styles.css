@@ -243,6 +243,14 @@ a:hover {
   color: #15967d;
 }
 
+a.white{
+  color: white;
+  text-decoration: underline;
+}
+a:hover.white {
+  color: lightgray;
+}
+
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
   color: inherit;
   text-decoration: none;
@@ -11439,7 +11447,7 @@ html {
   line-height: 2.75rem;
 }
 .masthead .masthead-subheading {
-  font-size: 1.25rem;
+  font-size: 1.75rem;
 }
 .masthead .masthead-avatar {
   width: 15rem;
@@ -11455,7 +11463,7 @@ html {
     line-height: 3.5rem;
   }
   .masthead .masthead-subheading {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .masthead .masthead-avatar {
     width: 25rem;
