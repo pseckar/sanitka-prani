@@ -13,4 +13,4 @@ After downloading, simply edit the HTML and CSS files included with `src` direct
 
 ## Copyright and License
 
-Copyright 2013-2021 Start Bootstrap LLC. Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-freelancer/blob/master/LICENSE) license.
+Copyright 2022 Petr Seckar. Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-freelancer/blob/master/LICENSE) license.
