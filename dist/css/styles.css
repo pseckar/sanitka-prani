@@ -11517,3 +11517,10 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+
+[lang] {
+  display: none;
+}
+[lang=cs] {
+  display: unset;
+}
