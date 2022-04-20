@@ -39,6 +39,8 @@
                         </li>
                         <li class="nav-item mx-0 mx-lg-1">
                             <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#wishes"><span lang="cs">Přání</span><span lang="en">Wishes</span></a>
+                        </li>                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#donate"><span lang="cs">Podpořte nás</span><span lang="en">Donate</span></a>
                         </li>
                         <li class="nav-item mx-0 mx-lg-1">
                             <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact"><span lang="cs">Kontakt</span><span lang="en">Contact</span></a>
@@ -143,38 +145,204 @@
                 </div>
                 <!-- wishes Section Content-->
                 <div class="row">
+                    <p class="lead">
+                        <span lang="cs">Pokud máte zájem o splnění přání pro nemobilního pacienta v terminálním stádiu, vyplńte prosím vstupní formulář a podrobně popište samotné přání.</span>
+                        <span lang="en">If you have a wish for an immobile terminal patient, please complete the intake form and describe the wish as clearly as possible.</span>    
+                    </p>
+                    <p class="text-center">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#wishCollapse" aria-expanded="false" aria-controls="wishCollapse">
+                            <span lang="cs">Mám zájem o přání</span>
+                            <span lang="en">Request a wish</span>    
+                        </button>
+                    </p>
+                <div class="row collapse" id="wishCollapse">
                     <div class="col-lg-12 ms-auto text-center">
-                        <p class="lead">
-                            <span lang="cs">Formulář pro poptávku přání se připravuje. V případě potřeby nás kontaktujte na e-mail <a href="mailto:info@sanitkaprani.cz">info@sanitkaprani.cz</a> či telefon <a href="tel:+420778776690">778 77 66 90</a></span>
-                            <span lang="en">Request form for wishes is being prepared. In case of need contact us by e-mail <a href="mailto:info@sanitkaprani.cz">info@sanitkaprani.cz</a> or phone <a href="tel:+420778776690">+420 778 77 66 90</a></span>
-                        </p>
-                    </div>
-                        <div class="col-lg-12 ms-auto text-center">
-                            <p class="lead">
-                                <span lang="cs">Pokud chcete na projekt přispět libovolnou částkou, můžete tak učinit na <a href="https://ib.fio.cz/ib/transparent?a=2202156811" target="_blank">transparentní účet</a>:</span>
-                                <span lang="en">If you would like to support the project by any amount you can by transfer it to the <a href="https://ib.fio.cz/ib/transparent?a=2202156811" target="_blank">transparent account</a>:</span>
-                            </p>
-                            <p style="font-size: 1.5rem">
-                                2202156811/2010
-                            </p>
-                            <p class="lead">
-                                <span lang="cs">Pomoci můžete také tím, že nás budete sledovat a šířit na sociálních sítích Facebook (<a href="https://www.facebook.com/Sanitka-p%C5%99%C3%A1n%C3%AD-100719082590957/" target="_blank">Sanitka přání</a>) a Instagram (<a href="https://instagram.com/sanitka_prani?utm_medium=copy_link" target="_blank">@sanitka_prani</a>).</span>
-                                <span lang="en">You can also help by following and sharing the project on social networks Facebook (<a href="https://www.facebook.com/Sanitka-p%C5%99%C3%A1n%C3%AD-100719082590957/" target="_blank">Sanitka přání</a>) and Instagram (<a href="https://instagram.com/sanitka_prani?utm_medium=copy_link" target="_blank">@sanitka_prani</a>).</span>            
-                            </p>
+                        <div class="row">
+                            <div class="col-lg-12 ms-auto">
+                                <form id="contact-form" method="post" action="php/form.php" role="form">
+        
+                                    <div class="messages"></div>
+                                
+                                    <div class="controls">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="form_wish">Popište své přání *</label>
+                                                    <textarea id="form_wish" name="wish" class="form-control" placeholder="" rows="4" required="required" data-error="Popište prosím své přání."></textarea>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="form_date">Máte preferovaný termín, kdy má být přání splněno?</label>
+                                                    <input id="form_date" type="date" name="date" class="form-control" data-error="Datum není validní.">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h4 class="text-center mt-3">
+                                                    <span lang="cs">O pacientovi</span> 
+                                                    <span lang="en">About patient</span> 
+                                                </h4>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_sex">Pohlaví *</label>
+                                                    <select id="form_sex" name="sex" class="form-control" required="required" data-error="Zadejte prosím pohlaví pacienta.">
+                                                        <option value=""></option>
+                                                        <option value="male">muž</option>
+                                                        <option value="female">žena</option>
+                                                        <option value="other">jiné</option>
+                                                    </select>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>    
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_name">Jméno *</label>
+                                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="" required="required" data-error="Zadejte prosím jméno pacienta.">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_lastname">Příjmení *</label>
+                                                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="" required="required" data-error="Zadejte prosím příjmení pacienta.">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_birthdate">Datum narození *</label>
+                                                    <input id="form_birthdate" type="date" name="birthdate" class="form-control" data-error="Datum není validní.">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p class="lead mt-3">Zadejte adresu, kde má být pacient vyzvednut:</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_address">Adresa *</label>
+                                                    <input id="form_address" type="text" name="address" class="form-control" placeholder="" required="required" data-error="Zadejte prosím jméno pacienta.">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_zipcode">PSČ *</label>
+                                                    <input id="form_zipcode" type="number" name="zipcode" class="form-control" placeholder="" required="required" data-error="Zadejte prosím jméno pacienta.">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_city">Město *</label>
+                                                    <input id="form_city" type="text" name="city" class="form-control" placeholder="" required="required" data-error="Zadejte prosím jméno pacienta.">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_phone">Telefon</label>
+                                                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="" data-error="Zadejte prosím jméno pacienta.">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_need">Zdravotní pojišťovna</label>
+                                                    <select id="form_need" name="need" class="form-control" data-error="Please specify your need.">
+                                                        <option value=""></option>
+                                                        <option value="111">VZP (111)</option>
+                                                        <option value="201">VoZP (201)</option>
+                                                        <option value="205">ČPZP (205)</option>
+                                                        <option value="207">OZP (207)</option>
+                                                        <option value="209">ZPŠ (209)</option>
+                                                        <option value="211">ZPMV (211)</option>
+                                                        <option value="213">RBP (213)</option>
+                                                    </select>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_floor">Bydlím v</label>
+                                                    <select id="form_floor" name="floor" class="form-control" data-error="Zadejte prosím pohlaví pacienta.">
+                                                        <option value=""></option>
+                                                        <option value="ground">přízemí</option>
+                                                        <option value="1">prvním patře</option>
+                                                        <option value="2">druhém patře</option>
+                                                        <option value="3">třetím patře</option>
+                                                        <option value="higher">vyšším patře</option>
+                                                    </select>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p class="text-muted">
+                                                    <strong>*</strong> Tato pole jsou povinná.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- Donate Section-->
+        <section class="page-section  bg-primary text-white" id="donate">
+            <div class="container">
+                <!-- Donate Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white mb-0">
+                    <span lang="cs">Podpořte projekt</span>
+                    <span lang="en">Donate to project</span>
+                </h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Donate Section Form-->
+                <div class="row">
+                    <div class="col-lg-12 ms-auto text-center">
+                        <p class="lead">
+                            <span lang="cs">Pokud chcete na projekt přispět libovolnou částkou, můžete tak učinit na <a class="white" href="https://ib.fio.cz/ib/transparent?a=2202156811" target="_blank">transparentní účet</a>:</span>
+                            <span lang="en">If you would like to support the project by any amount you can by transfer it to the <a class="white" href="https://ib.fio.cz/ib/transparent?a=2202156811" target="_blank">transparent account</a>:</span>
+                        </p>
+                        <p style="font-size: 1.5rem">
+                            2202156811/2010
+                        </p>
+                        <p class="lead">
+                            <span lang="cs">Pomoci můžete také tím, že nás budete sledovat a šířit na sociálních sítích Facebook (<a class="white" href="https://www.facebook.com/Sanitka-p%C5%99%C3%A1n%C3%AD-100719082590957/" target="_blank">Sanitka přání</a>) a Instagram (<a class="white" href="https://instagram.com/sanitka_prani?utm_medium=copy_link" target="_blank">@sanitka_prani</a>).</span>
+                            <span lang="en">You can also help by following and sharing the project on social networks Facebook (<a class="white" href="https://www.facebook.com/Sanitka-p%C5%99%C3%A1n%C3%AD-100719082590957/" target="_blank">Sanitka přání</a>) and Instagram (<a class="white" href="https://instagram.com/sanitka_prani?utm_medium=copy_link" target="_blank">@sanitka_prani</a>).</span>            
+                        </p>
+                    </div>
+                </div>                
+            </div>
+        </section>
         <!-- Contact Section-->
-        <section class="page-section bg-primary text-white" id="contact">
+        <section class="page-section" id="contact">
             <div class="container">
                 <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white mb-0">
+                <h2 class="page-section-heading text-center text-uppercase mb-0">
                     <span lang="cs">Kontakty</span>
                     <span lang="en">Contacts</span>
                 </h2>
                 <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
+                <div class="divider-custom">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon">
                         <i class="fas fa-star"></i>
@@ -188,7 +356,7 @@
                             Sanitka přání Česká republika, z.s.<br/>
                             <span lang="cs">Sídlo</span><span lang="en">Residency</span>: Buchovcova 1668/4, Žižkov, 130 00 Praha 3<br/>
                             IČ: 14318482<br/>
-                            <a class="white" href="https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=1152847&typ=UPLNY" target="_blank" rel="noopener noreferrer"><span lang="cs">Kompletní výpis ze spolkového rejstříku</span><span lang="en">Complete info in database of association (Czech only)</span></a><br/>
+                            <a href="https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=1152847&typ=UPLNY" target="_blank" rel="noopener noreferrer"><span lang="cs">Kompletní výpis ze spolkového rejstříku</span><span lang="en">Complete info in database of association (Czech only)</span></a><br/>
                         </p>
                     </div>
                 </div>                
