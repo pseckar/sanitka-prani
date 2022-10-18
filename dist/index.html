@@ -24,10 +24,12 @@
         <link href="css/fontface.css" rel="stylesheet" />
     </head>
     <body id="page-top">
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0" nonce="ARPKCd3D"></script>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top">Sanitka přání</a>
+                <img class="navbar-brand" src="assets/img/logo.svg" alt="Sanitka přání" href="#page-top" height="60"/>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -38,10 +40,19 @@
                             <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#project"><span lang="cs">O projetku</span><span lang="en">Project</span></a>
                         </li>
                         <li class="nav-item mx-0 mx-lg-1">
-                            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about"><span lang="cs">Přání</span><span lang="en">Wishes</span></a>
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#wishes"><span lang="cs">Přání</span><span lang="en">Wishes</span></a>
                         </li>
                         <li class="nav-item mx-0 mx-lg-1">
-                            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact"><span lang="cs">Kontakt</span><span lang="en">Contact</span></a>
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#donate"><span lang="cs">Podporují nás</span><span lang="en">Supporting us</span></a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#cooperation"><span lang="cs">Spolupracujeme</span><span lang="en">Cooperation</span></a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#ourstory"><span lang="cs">Náš příběh</span><span lang="en">Our story</span></a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact"><span lang="cs">Náš tým</span><span lang="en">Our team</span></a>
                         </li>
                         <li class="nav-item mx-0 mx-lg-1">
                             <button class="btn nav-link py-3 px-0 px-lg-3 rounded" lang="cs" onclick="localize('en')"><img style="width:30px;" src="assets/img/gb.svg" alt="English" /></button>
@@ -55,7 +66,7 @@
         <header class="masthead text-secondary text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="assets/img/logo.svg" alt="Sanitka přání" />
+                <!-- <img class="masthead-avatar mb-5" src="assets/img/logo.jpg" alt="Sanitka přání"/> -->
                 <!-- Masthead Subheading-->
                 <p class="masthead-subheading font-weight-light mb-0">
                     <span lang="cs">Plníme přání těm, kteří si je sami splnit nemohou</span>
@@ -81,54 +92,36 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12 ms-auto">
-                        <h3 class="text-center mt-5 mb-3">
-                            <span lang="cs">Jsme Sanitka přání Česká republika, z.s.</span>
-                            <span lang="en">We are <i>Sanitka přání Česká republika, z.s.</i></span></h3>
-                        <h4 class="text-center mb-3">
-                            <span lang="cs">Neziskový projekt vycházející z nizozemské</span> 
-                            <span lang="en">Non-profit project established based on the Dutch</span> 
-                            <a class="white" href="https://www.ambulancewens.nl/" target="_blank">Stichting Ambulance Wens</a>.
-                        </h4>
                         <div lang="cs">
-                            <p class="lead">
-                                Název vychází z myšlenky splnit poslední přání osobám na sklonku života, a to za pomoci dobrovolníků a vlastní sanitky. <br/>
-                                <a class="white" href="https://www.ambulancewens.nl/" target="_blank">Stichting Ambulance Wens</a> byla založena v Holandsku v roce 2007 jako doplněk péče o imobilní pacienty v terminálním stádiu nemoci. Zakladatelem byl řidič sanitky Kees Veldboer. Stále existuje mnoho pacientů, kteří zemřou, aniž by se skutečně „rozloučili“. Jedním z důvodů, proč tomu tak je, je imobilita pacienta a stávající systém není připraven pacientovo přání splnit. Proto byla založena nadace na pomoc lidem, kteří jsou závislí na sanitní dopravě.<br/>
-                                Impulsem k založení nadace byla událost, která se stala zakladateli nadace - Kees Veldboer splnil poslední přání bývalého námořníka, pana Stefanuta, během převozu sanitkou v Rotterdamu. Tento pán tak strašně chtěl ještě jednou plout na lodi, že Kees „podlehl“ jeho prosbám a plavbu pacientovi umožnil.<br/>
-                                Další možnosti toho, co bychom mohli pro lidi s život ohrožujícím onemocněním a zbytkem života udělat, jsou například návštěva ZOO, návštěva milovaného člověka, který již není mobilní, návštěva určitého místa, na které má pacient zvláštní vzpomínky atd. Jsou to jednoduché věci s velkým významem.<br/>
-                                Je možné realizovat i náročnější přání, jako jsou například výlet lodí, návštěvu koncertu, sportovního utkání, divadla, atd. To vše pod vedením odborného personálu a sanitky s pohodlnými nosítky.<br/>
-                                Služba je pro klienta ZDARMA. Provoz je financován díky dárcům, ať už se jedná o soukromé osoby, firmy, větší společnosti či státní správu ve formě dotací.
+                            <h3 class="text-center mb-3">Naše poslání</h3>
+                            <p class="lead justify">
+                                Posláním spolku Sanitka přání Česká republika, z.s. je poskytnout imobilnímu pacientovi v terminálním stadiu nemoci možnost rozloučit se s lidmi nebo místem, které se pro něho stalo díky nemoci nedostupné; aby pacient nemusel zemřít, aniž by nebylo splněno jeho poslední přání. Tím, že připravíme vysněný zážitek, můžeme být v posledních dnech jeho života trochou světla jak pro samotného pacienta, tak i pro jeho okolí.<br/><br/>
+                                Protože jen jedno přání může být poslední - a my ho rádi splníme každému pacientovi, pomůžeme každému pacientovi pouze jednou! To je to, čeho chceme dosáhnout. Zlepšení kvality života v tomto nelehkém období a alespoň na chvíli odsunout těžké okamžiky v závěru života.
                             </p>
-                            <h4 class="text-center mb-3">Naše poslání</h4>
-                            <p class="lead">
-                                Posláním spolku Sanitka přání Česká republika,z.s. je poskytnout imobilnímu pacientovi v terminálním stadiu nemoci možnost rozloučit se s lidmi nebo místem, které se pro něho stalo díky nemoci nedostupné; aby pacient nemusel zemřít, aniž by nebylo splněno jeho poslední přání. Tím, že připravíme vysněný zážitek, můžeme být v posledních dnech jeho života trochou světla jak pro samotného pacienta, tak i pro jeho okolí.<br/>
-                                Protože jen jedno přání může být poslední - a my ho rádi splníme každému pacientovi, pomůžeme každému pacientovi pouze jednou! To je to, čeho chceme dosáhnout. Zlepšení kvality života v tomto nelehkém období a alespoň na chvíli odsunout těžké okamžiky v závěru života. <br/>
-                                Sanitka přání Česká republika,z.s. aktuálně nemá k dispozici potřebné vozidlo / sanitku. Ideální se jeví sanitka vyvinutá holandskými kolegy: tato sanitka je navržena tak, aby se klient mohl přímo z nosítek dívat ven ze sanitky přes zaslepená okna a sledovat tak krajinu, kterou cestuje. Nosítka jsou elektrická a se speciální matrací, takže klient je přepravován velmi pohodlně. V současné době s snažíme nashromáždit dostatek finančních prostředků na pořízení této speciální sanitky. <br/>
-                            </p>
+                            <div class="alert alert-primary d-flex align-items-center" role="alert">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+                                    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                  </svg>                                <div>
+                                    Sanitka přání Česká republika,z.s. aktuálně nemá k dispozici potřebné vozidlo / sanitku. Ideální se jeví sanitka vyvinutá holandskými kolegy: tato sanitka je navržena tak, aby se klient mohl přímo z nosítek dívat ven ze sanitky přes zaslepená okna a sledovat tak krajinu, kterou cestuje. Nosítka jsou elektrická a se speciální matrací, takže klient je přepravován velmi pohodlně. V současné době s snažíme nashromáždit dostatek finančních prostředků na pořízení této speciální sanitky.
+                                </div>
+                            </div>
                         </div>
                         <div lang="en">
-                            <p class="lead">
-                                The name is based on the idea of fulfilling the last wishes of people at the end of their lives - immobile patients in the terminal stage of their disease, with the help of volunteers and their own ambulance.<br/>
-                                <a class="white" href="https://www.ambulancewens.nl/" target="_blank">Stichting Ambulance Wens</a> was founded in the Netherlands in 2007 as a supplement to the care of immobile patients in the terminal stage of their disease. The founder was ambulance driver Kees Veldboer. There are still many patients who die without actually "saying goodbye". One of the reasons for this is the patient's immobility and the current system is not ready to fulfil the patient's wishes. That is why a foundation was set up to help people who are dependent on ambulance transport.<br/>
-                                The initial reason for forming the foundation was the event that happened to the founder of the foundation - Kees Veldboer fulfilled the last wish of the former sailor, Mr. Stefanut, during the ambulance transport in Rotterdam. This gentleman wanted so much to sail the ship once again that Kees "succumbed" to his wish and brought him not just to the harbour but gave him the final opportunity to sail again, much to his delight.<br/>
-                                Other options we could do for people with life-threatening illnesses and terminally ill patients are, for example, a visit to a zoo, a visit to see a loved one who is no longer mobile, a visit to a place where the patient has special memories, etc. These are simple things of great importance. <br/>
-                                It is possible to organise even more demanding wishes, such as a boat trip, a concert visit, a sports match, a theatre visit, etc. All under the guidance of professional staff and an ambulance with a comfortable facility.<br/>
-                                The service is FREE for the client. The event is financed thanks to donors, whether they are private persons, companies, larger companies or the state authorities in the form of subsidies.
-                            </p>
-                            <h4 class="text-center mb-3">Our mission</h4>
-                            <p class="lead">
+                            <h3 class="text-center mb-3">Our mission</h3>
+                            <p class="lead justify">
                                 The mission of <i>Sanitka přání Česká republika, z.s.</i> is to give an immobile patient in the terminal stage of the disease the opportunity to say goodbye to people or a place which has become inaccessible to them as a result of the disease; so that the patient does not have to die without his last wish being fulfilled. By preparing a dream experience, we can bring a light in the last days of their life, both for the patient himself and for those around him.<br/>
                                 Because only one wish can be the last - and we are happy to fulfil it for each patient, we will help each patient only once! That is what we want to achieve. Improving the quality of life in this difficult period and at least for a while forget and postpone difficult moments at the end of their life.<br/>
-                                Ambulance Wish Czech Republic, z.s. does not currently have the required vehicle / ambulance. An ambulance developed by Dutch colleagues seems ideal: this ambulance is designed so that the client can look out of the ambulance directly from the stretcher through windows and thus watch the landscape while he or she travels. The stretcher is electric and with a special mattress, so the client is transported very comfortably. We are currently working to raise sufficient funds to purchase this special ambulance.<br/>
+                                <i>Sanitka přání Česká republika, z.s.</i> does not currently have the required vehicle / ambulance. An ambulance developed by Dutch colleagues seems ideal: this ambulance is designed so that the client can look out of the ambulance directly from the stretcher through windows and thus watch the landscape while he or she travels. The stretcher is electric and with a special mattress, so the client is transported very comfortably. We are currently working to raise sufficient funds to purchase this special ambulance.<br/>
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- About Section-->
-        <section class="page-section mb-0" id="about">
+        <!-- wishes Section-->
+        <section class="page-section mb-0" id="wishes">
             <div class="container">
-                <!-- About Section Heading-->
+                <!-- wishes Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-secondary">
                     <span lang="cs">Přání</span>
                     <span lang="en">Wishes</span>
@@ -141,7 +134,7 @@
                     </div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <!-- About Section Content-->
+                <!-- wishes Section Content-->
                 <div class="row">
                     <div class="col-lg-12 ms-auto text-center">
                         <p class="lead">
@@ -149,29 +142,169 @@
                             <span lang="en">Request form for wishes is being prepared. In case of need contact us by e-mail <a href="mailto:info@sanitkaprani.cz">info@sanitkaprani.cz</a> or phone <a href="tel:+420778776690">+420 778 77 66 90</a></span>
                         </p>
                     </div>
-                        <div class="col-lg-12 ms-auto text-center">
-                            <p class="lead">
-                                <span lang="cs">Pokud chcete na projekt přispět libovolnou částkou, můžete tak učinit na <a href="https://ib.fio.cz/ib/transparent?a=2202156811" target="_blank">transparentní účet</a>:</span>
-                                <span lang="en">If you would like to support the project by any amount you can by transfer it to the <a href="https://ib.fio.cz/ib/transparent?a=2202156811" target="_blank">transparent account</a>:</span>
-                            </p>
-                            <p style="font-size: 1.5rem">
-                                2202156811/2010
-                            </p>
-                            <p class="lead">
-                                <span lang="cs">Pomoci můžete také tím, že nás budete sledovat a šířit na sociálních sítích Facebook (<a href="https://www.facebook.com/Sanitka-p%C5%99%C3%A1n%C3%AD-100719082590957/" target="_blank">Sanitka přání</a>) a Instagram (<a href="https://instagram.com/sanitka_prani?utm_medium=copy_link" target="_blank">@sanitka_prani</a>).</span>
-                                <span lang="en">You can also help by following and sharing the project on social networks Facebook (<a href="https://www.facebook.com/Sanitka-p%C5%99%C3%A1n%C3%AD-100719082590957/" target="_blank">Sanitka přání</a>) and Instagram (<a href="https://instagram.com/sanitka_prani?utm_medium=copy_link" target="_blank">@sanitka_prani</a>).</span>            
-                            </p>
+                </div>
+                <div class="row" hidden>
+                    <p class="lead">
+                        <span lang="cs">Pokud máte zájem o splnění přání pro nemobilního pacienta v terminálním stádiu, vyplńte prosím vstupní formulář a podrobně popište samotné přání.</span>
+                        <span lang="en">If you have a wish for an immobile terminal patient, please complete the intake form and describe the wish as clearly as possible.</span>    
+                    </p>
+                    <p class="text-center">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#wishCollapse" aria-expanded="false" aria-controls="wishCollapse">
+                            <span lang="cs">Mám zájem o přání</span>
+                            <span lang="en">Request a wish</span>    
+                        </button>
+                    </p>
+                <div class="row collapse" id="wishCollapse">
+                    <div class="col-lg-12 ms-auto text-center">
+                        <div class="row">
+                            <div class="col-lg-12 ms-auto">
+                                <form id="contact-form" method="post" action="php/form.php" role="form">
+        
+                                    <div class="messages"></div>
+                                
+                                    <div class="controls">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="form_wish">Popište své přání *</label>
+                                                    <textarea id="form_wish" name="wish" class="form-control" placeholder="" rows="4" required="required" data-error="Popište prosím své přání."></textarea>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="form_date">Máte preferovaný termín, kdy má být přání splněno?</label>
+                                                    <input id="form_date" type="date" name="date" class="form-control" data-error="Datum není validní.">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h4 class="text-center mt-3">
+                                                    <span lang="cs">O pacientovi</span> 
+                                                    <span lang="en">About patient</span> 
+                                                </h4>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_sex">Pohlaví *</label>
+                                                    <select id="form_sex" name="sex" class="form-control" required="required" data-error="Zadejte prosím pohlaví pacienta.">
+                                                        <option value=""></option>
+                                                        <option value="male">muž</option>
+                                                        <option value="female">žena</option>
+                                                        <option value="other">jiné</option>
+                                                    </select>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>    
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_name">Jméno *</label>
+                                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="" required="required" data-error="Zadejte prosím jméno pacienta.">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_lastname">Příjmení *</label>
+                                                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="" required="required" data-error="Zadejte prosím příjmení pacienta.">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_birthdate">Datum narození *</label>
+                                                    <input id="form_birthdate" type="date" name="birthdate" class="form-control" data-error="Datum není validní.">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p class="lead mt-3">Zadejte adresu, kde má být pacient vyzvednut:</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_address">Adresa *</label>
+                                                    <input id="form_address" type="text" name="address" class="form-control" placeholder="" required="required" data-error="Zadejte prosím jméno pacienta.">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_zipcode">PSČ *</label>
+                                                    <input id="form_zipcode" type="number" name="zipcode" class="form-control" placeholder="" required="required" data-error="Zadejte prosím jméno pacienta.">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_city">Město *</label>
+                                                    <input id="form_city" type="text" name="city" class="form-control" placeholder="" required="required" data-error="Zadejte prosím jméno pacienta.">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_phone">Telefon</label>
+                                                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="" data-error="Zadejte prosím jméno pacienta.">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_need">Zdravotní pojišťovna</label>
+                                                    <select id="form_need" name="need" class="form-control" data-error="Please specify your need.">
+                                                        <option value=""></option>
+                                                        <option value="111">VZP (111)</option>
+                                                        <option value="201">VoZP (201)</option>
+                                                        <option value="205">ČPZP (205)</option>
+                                                        <option value="207">OZP (207)</option>
+                                                        <option value="209">ZPŠ (209)</option>
+                                                        <option value="211">ZPMV (211)</option>
+                                                        <option value="213">RBP (213)</option>
+                                                    </select>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_floor">Bydlím v</label>
+                                                    <select id="form_floor" name="floor" class="form-control" data-error="Zadejte prosím pohlaví pacienta.">
+                                                        <option value=""></option>
+                                                        <option value="ground">přízemí</option>
+                                                        <option value="1">prvním patře</option>
+                                                        <option value="2">druhém patře</option>
+                                                        <option value="3">třetím patře</option>
+                                                        <option value="higher">vyšším patře</option>
+                                                    </select>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p class="text-muted">
+                                                    <strong>*</strong> Tato pole jsou povinná.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Contact Section-->
-        <section class="page-section bg-primary text-white" id="contact">
+        <!-- Donate Section-->
+        <section class="page-section bg-primary text-white" id="donate">
             <div class="container">
-                <!-- Contact Section Heading-->
+                <!-- Donate Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-white mb-0">
-                    <span lang="cs">Kontakty</span>
-                    <span lang="en">Contacts</span>
+                    <span lang="cs">Podporují nás</span>
+                    <span lang="en">Supporting us</span>
                 </h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
@@ -181,17 +314,217 @@
                     </div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <!-- Contact Section Form-->
+                <!-- Donate Section Form-->
                 <div class="row">
                     <div class="col-lg-12 ms-auto text-center">
                         <p class="lead">
-                            Sanitka přání Česká republika, z.s.<br/>
-                            <span lang="cs">Sídlo</span><span lang="en">Residency</span>: Buchovcova 1668/4, Žižkov, 130 00 Praha 3<br/>
-                            IČ: 14318482<br/>
-                            <a class="white" href="https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=1152847&typ=UPLNY" target="_blank" rel="noopener noreferrer"><span lang="cs">Kompletní výpis ze spolkového rejstříku</span><span lang="en">Complete info in database of association (Czech only)</span></a><br/>
+                            <span lang="cs">Informace o těch, kteří nás podporují, se připravují.</span>
+                            <span lang="en">Information about those who support us are being prepared.</span>
                         </p>
                     </div>
+                </div>                      
+                <div class="row">
+                    <div class="col-lg-12 ms-auto text-center">
+                        <p class="lead">
+                            <span lang="cs">Pokud chcete na projekt přispět libovolnou částkou, můžete tak učinit na <a class="white" href="https://ib.fio.cz/ib/transparent?a=2202156811" target="_blank">transparentní účet</a>:</span>
+                            <span lang="en">If you would like to support the project by any amount you can by transfer it to the <a class="white" href="https://ib.fio.cz/ib/transparent?a=2202156811" target="_blank">transparent account</a>:</span>
+                        </p>
+                        <p style="font-size: 1.5rem">
+                            2202156811/2010
+                        </p>
+                        <p><img src="assets/img/qrcode.svg"></p>
+                    </div>
+                    <div class="row">
+
+                        <p class="lead">
+                            <span lang="cs">Pomoci můžete také tím, že nás budete sledovat a šířit na sociálních sítích Facebook (<a class="white" href="https://www.facebook.com/Sanitka-p%C5%99%C3%A1n%C3%AD-100719082590957/" target="_blank">Sanitka přání</a>) a Instagram (<a class="white" href="https://instagram.com/sanitka_prani?utm_medium=copy_link" target="_blank">@sanitka_prani</a>).</span>
+                            <span lang="en">You can also help by following and sharing the project on social networks Facebook (<a class="white" href="https://www.facebook.com/Sanitka-p%C5%99%C3%A1n%C3%AD-100719082590957/" target="_blank">Sanitka přání</a>) and Instagram (<a class="white" href="https://instagram.com/sanitka_prani?utm_medium=copy_link" target="_blank">@sanitka_prani</a>).</span>            
+                        </p>
+                    </div>
+                </div>
+                <div class="row" hidden>
+                    <div class="col-lg-12 ms-auto text-center">
+                        <div class="fb-page" data-href="https://www.facebook.com/Sanitka-p%C5%99%C3%A1n%C3%AD-100719082590957/" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Sanitka-p%C5%99%C3%A1n%C3%AD-100719082590957/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Sanitka-p%C5%99%C3%A1n%C3%AD-100719082590957/">Sanitka přání</a></blockquote></div>
+                    </div>
                 </div>                
+            </div>
+        </section>
+        <!-- Cooperation Section-->
+        <section class="page-section" id="cooperation">
+            <div class="container">
+                <!-- Cooperation Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase mb-0">
+                    <span lang="cs">Spolupracujeme</span>
+                    <span lang="en">Cooperation</span>
+                </h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Cooperation Section Form-->
+                <div class="row">
+                    <div class="col-lg-12 ms-auto text-center">
+                        <p class="lead">
+                            <span lang="cs">Informace o spolupráci se připravují.</span>
+                            <span lang="en">Information about cooperation are being prepared.</span>
+                        </p>
+                    </div>
+                </div>                      
+            </div>
+        </section>
+        <!-- ourstory Section-->
+        <section class="page-section bg-primary text-white" id="ourstory">
+            <div class="container">
+                <!-- ourstory Section Heading-->
+                <h2 class="page-section-heading text-center text-white text-uppercase mb-0">
+                    <span lang="cs">Náš příběh</span>
+                    <span lang="en">Our story</span>
+                </h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- ourstory Section Form-->
+                <div class="row">
+                    <div class="col-lg-12 ms-auto">
+                        <div lang="cs">
+                        <p class="lead justify">
+                            Název <i>Sanitka přání</i> vychází z myšlenky splnit poslední přání osobám na sklonku života, a to za pomoci dobrovolníků a vlastní sanitky. <br/>
+                            <a class="white" href="https://www.ambulancewens.nl/" target="_blank">Stichting Ambulance Wens</a> byla založena v Holandsku v roce 2007 jako doplněk péče o imobilní pacienty v terminálním stádiu nemoci. Zakladatelem byl řidič sanitky Kees Veldboer. Stále existuje mnoho pacientů, kteří zemřou, aniž by se skutečně „rozloučili“. Jedním z důvodů, proč tomu tak je, je imobilita pacienta a stávající systém není připraven pacientovo přání splnit. Proto byla založena nadace na pomoc lidem, kteří jsou závislí na sanitní dopravě.<br/>
+                            Impulsem k založení nadace byla událost, která se stala zakladateli nadace - Kees Veldboer splnil poslední přání bývalého námořníka, pana Stefanuta, během převozu sanitkou v Rotterdamu. Tento pán tak strašně chtěl ještě jednou plout na lodi, že Kees „podlehl“ jeho prosbám a plavbu pacientovi umožnil.<br/>
+                            Další možnosti toho, co bychom mohli pro lidi s život ohrožujícím onemocněním a zbytkem života udělat, jsou například návštěva ZOO, návštěva milovaného člověka, který již není mobilní, návštěva určitého místa, na které má pacient zvláštní vzpomínky atd. Jsou to jednoduché věci s velkým významem.<br/>
+                            Je možné realizovat i náročnější přání, jako jsou například výlet lodí, návštěvu koncertu, sportovního utkání, divadla, atd. To vše pod vedením odborného personálu a sanitky s pohodlnými nosítky.<br/>
+                            Služba je pro klienta ZDARMA. Provoz je financován díky dárcům, ať už se jedná o soukromé osoby, firmy, větší společnosti či státní správu ve formě dotací.
+                        </p>
+                    </div>
+                    <div lang="en">
+                        <p class="lead justify">
+                            The name <i>Sanitka přání</i> (translated to <i>Ambulance of wishes</i>) is based on the idea of fulfilling the last wishes of people at the end of their lives - immobile patients in the terminal stage of their disease, with the help of volunteers and their own ambulance.<br/>
+                            <a class="white" href="https://www.ambulancewens.nl/" target="_blank">Stichting Ambulance Wens</a> was founded in the Netherlands in 2007 as a supplement to the care of immobile patients in the terminal stage of their disease. The founder was ambulance driver Kees Veldboer. There are still many patients who die without actually "saying goodbye". One of the reasons for this is the patient's immobility and the current system is not ready to fulfil the patient's wishes. That is why a foundation was set up to help people who are dependent on ambulance transport.<br/>
+                            The initial reason for forming the foundation was the event that happened to the founder of the foundation - Kees Veldboer fulfilled the last wish of the former sailor, Mr. Stefanut, during the ambulance transport in Rotterdam. This gentleman wanted so much to sail the ship once again that Kees "succumbed" to his wish and brought him not just to the harbour but gave him the final opportunity to sail again, much to his delight.<br/>
+                            Other options we could do for people with life-threatening illnesses and terminally ill patients are, for example, a visit to a zoo, a visit to see a loved one who is no longer mobile, a visit to a place where the patient has special memories, etc. These are simple things of great importance. <br/>
+                            It is possible to organise even more demanding wishes, such as a boat trip, a concert visit, a sports match, a theatre visit, etc. All under the guidance of professional staff and an ambulance with a comfortable facility.<br/>
+                            The service is FREE for the client. The event is financed thanks to donors, whether they are private persons, companies, larger companies or the state authorities in the form of subsidies.
+                        </p>
+                    </div>
+                    </div>
+                </div>                      
+            </div>
+        </section>
+        <!-- Contact Section-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <!-- Contact Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase mb-0">
+                    <span lang="cs">Náš tým</span>
+                    <span lang="en">Our team</span>
+                </h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Contact Section Form-->
+                <div class="row">
+                    <div class="col-lg-12 ms-auto text-center">
+                        <h3 class="text-center mb-3">
+                            <span lang="cs">Realizační tým</span>
+                            <span lang="en">Implementation team</span>
+                        </h3>
+                        <div class="row">
+                            <div class="col-lg-4 ms-auto">
+                                <img src="assets/img/team_poslusny.jpg" alt="Libor Poslušný" /><br/>
+                                <h5 class="mt-3">Libor Poslušný</h5>
+                                <p class="lead">                                        
+                                    <span lang="cs">Spoluzakladatel organizace Czech SAR Team (pátrání po pohřešovaných osobách)<br/></span>
+                                    <span lang="en">Cofounder of Czech SAR Team organization</span>
+                                </p>
+                                <p class="lead">                                        
+                                    <span lang="cs"><i>Díky Sanitce přání si plním vlastní přání – pomáhat druhým.</i></span>
+                                    <span lang="en">Thanks to Sanitka přání I can fulfill my own wish - to help others</span>
+                                </p>
+                            </div>
+                            <div class="col-lg-4 ms-auto">
+                                <img src="assets/img/team_kytka.png" alt="Igor Kytka" /><br/>
+                                <h5 class="mt-3">Igor Kytka</h5>
+                                <p class="lead">                                        
+                                    <span lang="cs">Psycholog, designer služeb v oblasti sociální péče<br/></span>
+                                    <span lang="en">Psychologist, designer of social care services</span>
+                                </p>
+                                <p class="lead">                                        
+                                    <span lang="cs"><i>Sanitka přání je pro mě střípkem lidskosti a respekt k životu.</i></span>
+                                    <span lang="en">For me Sanitka přání is a glimpse of humanity and respect for life.</span>
+                                </p>
+                            </div>
+                            <div class="col-lg-4 ms-auto">
+                                <img src="assets/img/team_kartak.png" alt="Daniel Karták" /><br/>
+                                <h5 class="mt-3">Daniel Karták</h5>
+                                <p class="lead">                                        
+                                    <span lang="cs">Spoluzakladatel organizace Czech SAR Team (pátrání po pohřešovaných osobách)<br/></span>
+                                    <span lang="en">Cofounder of Czech SAR Team organization</span>
+                                </p>
+                                <p class="lead">                                        
+                                    <span lang="cs"><i>Sám jsem se musel vypořádat se závažnou nemocí, tak vím, jak je důležité pomáhat těm, co to potřebují.</i></span>
+                                    <span lang="en">I alone had to cope with serious disease, therefore I know how important it is to help those in need.</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 ms-auto text-center">
+                        <h3 class="text-center mb-3 mt-5">
+                            <span lang="cs">Širší tým</span>
+                            <span lang="en">Wider team</span>
+                        </h3>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 ms-auto">
+                                <h5 class="mt-3">Hanka Boušková DiS.</h5>
+                                <p class="lead">                                        
+                                    <span lang="cs">klinika anesteziologie, resuscitace a intenzivní medicíny RES1 a RES2 VFN Praha<br/></span>
+                                    <span lang="en">Clinic of anaesthesiology, resuscitation and intensive care RES1 and RES2 VFN Prague</span>
+                                </p>
+                                <p class="lead">                                        
+                                    <span lang="cs"><i>Velice ráda jsem se stala součástí projektu který v České republice schází a jako zdravotník ho velice kvituji.</i></span>
+                                    <span lang="en">I am glad to be part of project that was missing in Czechia and as a paramedic I am rooting for it.</span>
+                                </p>
+                            </div>
+                            <div class="col-lg-4 col-md-6 ms-auto">
+                                <h5 class="mt-3">Bc. Michal Švirik</h5>
+                                <p class="lead">                                        
+                                    <span lang="cs">staniční sestra na JIMP FN – Bohunice<br/></span>
+                                    <span lang="en">Stationary nurse JIMP FN - Bohunice</span>
+                                </p>
+                                <p class="lead">                                        
+                                    <span lang="cs"><i>Z praxe v paliativní péčí vím, že to je nesmírně důležitý krok k tomu, pozvednout péči o těžce nemocné a umírající na další a vyšší úroveň.</i></span>
+                                    <span lang="en">From my practice in palliative care I know it is important to raise the care for heavily sick </span>
+                                </p>
+                            </div>
+                            <div class="col-lg-4 col-md-6 ms-auto">
+                                <h5 class="mt-3">Marie Losová DiS.</h5>
+                                <p class="lead">                                        
+                                    <span lang="cs">zdravotnický záchranář ZZS kraje Vysočina<br/></span>
+                                    <span lang="en">Paramedic - ZZS Vysočina</span>
+                                </p>
+                                <p class="lead">                                        
+                                    <span lang="cs"><i>Terminální stádium nemoci je pořád život, a proto se mi tato myšlenka, pomoci ke splnění posledního přání, líbí. Žít je třeba až do konce.</i></span>
+                                    <span lang="en">Terminal state of a disease is still part of life, that is why I like the idea of helping to fulfil the last wish. Life should be lived until the very end.</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>                                   
             </div>
         </section>
         <!-- Footer-->
@@ -201,14 +534,28 @@
                     <!-- Footer Location-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">
-                            <span lang="cs">Kontakt</span>
-                            <span lang="en">Contact</span>
+                            <span lang="cs">O spolku</span>
+                            <span lang="en">About the association</span>
                         </h4>
                         <p class="lead mb-0">
-                            Sanitka přání Česká republika,z.s.
-                            <br />
+                            Sanitka přání Česká republika, z.s.<br/>
+                            <span lang="cs">Sídlo</span><span lang="en">Residency</span>: Buchovcova 1668/4, Žižkov, <br/>130 00 Praha 3<br/>
+                            IČ: 14318482<br/>
+                            <a href="https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=1152847&typ=UPLNY" target="_blank" rel="noopener noreferrer"><span lang="cs">Kompletní výpis ze spolkového rejstříku</span><span lang="en">Complete info in database of association (Czech only)</span></a>
+                        </p>
+                    </div>
+                    <!-- Footer About Text-->
+                    <div class="col-lg-4">
+                        <h4 class="text-uppercase mb-4">
+                            <span lang="cs">Kontakty</span>
+                            <span lang="en">Contacts</span>
+                        </h4>
+                        <p>
+                            <i class="fas fa-phone"></i>
                             <a href="tel:+420778776690">778 77 66 90</a>
-                            <br />
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope"></i>
                             <a href="mailto:info@sanitkaprani.cz">info@sanitkaprani.cz</a>
                         </p>
                     </div>
@@ -221,17 +568,7 @@
                         <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/Sanitka-p%C5%99%C3%A1n%C3%AD-100719082590957/" target="_blank"><i class="fab fa-fw fa-facebook-f"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="https://instagram.com/sanitka_prani?utm_medium=copy_link" target="_blank"><i class="fab fa-fw fa-instagram"></i></a>
                     </div>
-                    <!-- Footer About Text-->
-                    <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">
-                            <span lang="cs">O projektu</span>
-                            <span lang="en">About the project</span>
-                        </h4>
-                        <p class="lead mb-0">
-                            <span lang="cs">Plníme přání těm, kteří si je sami splnit nemohou</span>
-                            <span lang="en">We fulfil wishes to those who cannot do it themselves</span>
-                        </p>
-                    </div>
+
                 </div>
             </div>
         </footer>
