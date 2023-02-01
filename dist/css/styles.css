@@ -11455,6 +11455,10 @@ html {
 .masthead .masthead-avatar {
   width: 15rem;
 }
+.masthead .masthead-image {
+  max-width: 100%;
+  height: auto;
+}
 
 @media (min-width: 992px) {
   .masthead {
@@ -11470,6 +11474,10 @@ html {
   }
   .masthead .masthead-avatar {
     width: 25rem;
+  }
+  .masthead .masthead-image {
+    max-width: 70%;
+    height: auto;
   }
 }
 .project .project-item {
