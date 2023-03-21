@@ -136,165 +136,20 @@
                 </div>
                 <!-- wishes Section Content-->
                 <div class="row">
-                    <div class="col-lg-12 ms-auto text-center">
-                        <p class="lead">
-                            <span lang="cs">Formulář pro poptávku přání se připravuje. V případě potřeby nás kontaktujte na e-mail <a href="mailto:info@sanitkaprani.cz">info@sanitkaprani.cz</a> či telefon <a href="tel:+420778776690">+420 778 776 690</a></span>
-                            <span lang="en">Request form for wishes is being prepared. In case of need contact us by e-mail <a href="mailto:info@sanitkaprani.cz">info@sanitkaprani.cz</a> or phone <a href="tel:+420778776690">+420 778 776 690</a></span>
-                        </p>
-                    </div>
                 </div>
-                <div class="row" hidden>
-                    <p class="lead">
-                        <span lang="cs">Pokud máte zájem o splnění přání pro nemobilního pacienta v terminálním stádiu, vyplńte prosím vstupní formulář a podrobně popište samotné přání.</span>
-                        <span lang="en">If you have a wish for an immobile terminal patient, please complete the intake form and describe the wish as clearly as possible.</span>    
+                <div class="row">
+                    <p class="lead text-center">
+                        <span lang="cs">Pokud máte zájem o splnění přání pro nemobilního pacienta v terminálním stádiu, vyplňte prosím vstupní formulář.</span>
+                        <span lang="en">If you have a wish for an immobile terminal patient, please complete the intake form.</span>    
                     </p>
                     <p class="text-center">
-                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#wishCollapse" aria-expanded="false" aria-controls="wishCollapse">
-                            <span lang="cs">Mám zájem o přání</span>
-                            <span lang="en">Request a wish</span>    
-                        </button>
+                        <form action="/prani">
+                            <button class="btn btn-primary" type="submit">
+                                <span lang="cs">Mám zájem o přání</span>
+                                <span lang="en">Request a wish</span>        
+                            </button>
+                         </form>
                     </p>
-                <div class="row collapse" id="wishCollapse">
-                    <div class="col-lg-12 ms-auto text-center">
-                        <div class="row">
-                            <div class="col-lg-12 ms-auto">
-                                <form id="contact-form" method="post" action="php/form.php" role="form">
-        
-                                    <div class="messages"></div>
-                                
-                                    <div class="controls">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <label for="form_wish">Popište své přání *</label>
-                                                    <textarea id="form_wish" name="wish" class="form-control" placeholder="" rows="4" required="required" data-error="Popište prosím své přání."></textarea>
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <label for="form_date">Máte preferovaný termín, kdy má být přání splněno?</label>
-                                                    <input id="form_date" type="date" name="date" class="form-control" data-error="Datum není validní.">
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <h4 class="text-center mt-3">
-                                                    <span lang="cs">O pacientovi</span> 
-                                                    <span lang="en">About patient</span> 
-                                                </h4>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label for="form_sex">Pohlaví *</label>
-                                                    <select id="form_sex" name="sex" class="form-control" required="required" data-error="Zadejte prosím pohlaví pacienta.">
-                                                        <option value=""></option>
-                                                        <option value="male">muž</option>
-                                                        <option value="female">žena</option>
-                                                        <option value="other">jiné</option>
-                                                    </select>
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                            </div>    
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label for="form_name">Jméno *</label>
-                                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="" required="required" data-error="Zadejte prosím jméno pacienta.">
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label for="form_lastname">Příjmení *</label>
-                                                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="" required="required" data-error="Zadejte prosím příjmení pacienta.">
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label for="form_birthdate">Datum narození *</label>
-                                                    <input id="form_birthdate" type="date" name="birthdate" class="form-control" data-error="Datum není validní.">
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <p class="lead mt-3">Zadejte adresu, kde má být pacient vyzvednut:</p>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label for="form_address">Adresa *</label>
-                                                    <input id="form_address" type="text" name="address" class="form-control" placeholder="" required="required" data-error="Zadejte prosím jméno pacienta.">
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label for="form_zipcode">PSČ *</label>
-                                                    <input id="form_zipcode" type="number" name="zipcode" class="form-control" placeholder="" required="required" data-error="Zadejte prosím jméno pacienta.">
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label for="form_city">Město *</label>
-                                                    <input id="form_city" type="text" name="city" class="form-control" placeholder="" required="required" data-error="Zadejte prosím jméno pacienta.">
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label for="form_phone">Telefon</label>
-                                                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="" data-error="Zadejte prosím jméno pacienta.">
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label for="form_need">Zdravotní pojišťovna</label>
-                                                    <select id="form_need" name="need" class="form-control" data-error="Please specify your need.">
-                                                        <option value=""></option>
-                                                        <option value="111">VZP (111)</option>
-                                                        <option value="201">VoZP (201)</option>
-                                                        <option value="205">ČPZP (205)</option>
-                                                        <option value="207">OZP (207)</option>
-                                                        <option value="209">ZPŠ (209)</option>
-                                                        <option value="211">ZPMV (211)</option>
-                                                        <option value="213">RBP (213)</option>
-                                                    </select>
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label for="form_floor">Bydlím v</label>
-                                                    <select id="form_floor" name="floor" class="form-control" data-error="Zadejte prosím pohlaví pacienta.">
-                                                        <option value=""></option>
-                                                        <option value="ground">přízemí</option>
-                                                        <option value="1">prvním patře</option>
-                                                        <option value="2">druhém patře</option>
-                                                        <option value="3">třetím patře</option>
-                                                        <option value="higher">vyšším patře</option>
-                                                    </select>
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <p class="text-muted">
-                                                    <strong>*</strong> Tato pole jsou povinná.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
