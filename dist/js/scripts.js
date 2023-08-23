@@ -66,3 +66,15 @@ function localize(language){
     });
   }
 }
+
+function changeText(){
+    var elem = document.getElementById("btnForm");
+    if (elem.value =="open"){
+        elem.innerHTML = "\<span lang=\"cs\"\>Skrýt formulář\<\/span\>\<span lang=\"en\"\>Hide the form\<\/span\>";
+        elem.value = "closed";
+    }
+    else {
+        elem.innerHTML = "\<span lang=\"cs\"\>Mám zájem o přání\<\/span\>\<span lang=\"en\"\>Request a wish\<\/span\>";
+        elem.value = "open";
+    }
+}
